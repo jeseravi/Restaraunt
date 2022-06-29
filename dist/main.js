@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){let t=document.createElement("div");t.setAttribute("id","testid"),t.setAttribute("class","testClass"),t.innerHTML="testing html",document.getElementById("content").appendChild(t)}()})();
