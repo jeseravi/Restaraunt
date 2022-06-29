@@ -1,8 +1,15 @@
-export function generateElement(){
+export function generateElement(whatIsIt,entryName,innerHTML,whereToPut,id,chosenClass){
 
-    let createDiv = document.createElement("div");
-    createDiv.setAttribute("id","testid");
-    createDiv.setAttribute("class","testClass");
-    createDiv.innerHTML="testing html";
-    document.getElementById("content").appendChild(createDiv);
+    let generateWhat = whatIsIt;
+    let generateEntry = entryName;
+    let generateWhere = whereToPut;
+    let generateHTML = innerHTML;
+    let generateId=id;
+    let generateClass=chosenClass;
+
+    generateEntry = document.createElement(generateWhat);
+    generateEntry.setAttribute("id",generateId);
+    generateEntry.setAttribute("class",generateClass);
+    generateEntry.innerHTML=generateHTML;
+    document.getElementById(generateWhere).appendChild(generateEntry);
 }
