@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap");
+
 body{
     background-image: url("background.jpg");
     background-repeat: no-repeat;
@@ -5,12 +7,12 @@ body{
     justify-content: center;
     justify-items: center;
     background-size:cover;
+    font-family: "Montserrat", sans-serif;
 }
 
 #content{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     height:98vh;
 }
 
@@ -34,14 +36,20 @@ body{
     
 }
 
-#welcomeContainer{
+#mainContentContainer{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:relative;
-    bottom:400px;
+
+}
+
+#welcomeContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #0e2432;
+    padding:15px;
 
 }
 
@@ -49,9 +57,7 @@ body{
     color:white;
     font-size: 40px;
     display:flex;
-    justify-content: center;
-
-    
+    justify-content: center;   
 
 }
 
@@ -59,22 +65,50 @@ body{
     font-size:25px;
 }
 
-.welcomeHr{
-    border-color:gold;
-    margin-left:30%;
-    margin-right:30%;
-    min-width:500px;
+#menuContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    background-color: white;
+    width:80vw;
+    height:75vh;
+    border:solid #c59d5f 2px;
+    overflow:scroll;
+
 }
 
+#menuTitle{
+    color: black;
+    font-size:75px;
+    margin-top:10px;
 
-#welcomeButton{
-    margin-left:30%;
-    margin-right:30%; 
-    font-size:30px;  
-    margin-left:auto;
-    margin-right:auto;
-    cursor:pointer;  
-    background-color:#0e2432;
-    border:solid black 3px;
-    
+
+}
+
+#menuItem{
+    color: #c59d5f;
+    font-size: 30px;
+    font-weight:bold;
+    margin-bottom:5px;
+
+}
+
+#menuDesc{
+    font-size: 20px;
+    max-width:500px;
+    margin-bottom:10px;
+}
+
+#menuPrice{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#menuHr{
+    border-color:#c59d5f;
+    min-width:250px;
+    max-width:250px;
+    margin-bottom:25px;
+    margin-top:25px;
 }
